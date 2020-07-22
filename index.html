@@ -4,6 +4,8 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 <body>
+  <div class="container">
+    <div class="container_jsonFile">
     <form id="jsonFile" name="jsonFile" enctype="multipart/form-data" method="post">
       <fieldset>
         <h2>Json File</h2>
@@ -11,10 +13,23 @@
          <input type='button' id='btnLoad' value='Load' onclick='loadFile();'>
       </fieldset>
     </form>
-    <div id="map"></div>
+    </div>
+
+    <section class="checkbox">
+        <!-- Default unchecked -->
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultChecked2" unchecked>
+        <label class="custom-control-label" for="defaultChecked2">Показать машины</label>
+      </div>
+        <!-- Default unchecked -->
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultChecked2" unchecked>
+        <label class="custom-control-label" for="defaultChecked2">Показать доставки</label>
+      </div>
+    </section>
+  </div>
+  <div id="map"></div>
 </body>
 <script src="main.js"></script>
-<script async defer 
-    src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap&libraries=&v=weekly" type="text/javascript"></script>
-</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap&libraries=&v=weekly" type="text/javascript"></script>
 </html>
